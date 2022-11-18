@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Hexo主题美化</title>
+      <link href="/posts/ead7.html"/>
+      <url>/posts/ead7.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Hexo-Matery主题美化"><a href="#Hexo-Matery主题美化" class="headerlink" title="Hexo-Matery主题美化"></a>Hexo-Matery主题美化</h1><p>大家可以来我Hexo博客主页看看具体效果  <a href="https://wzl0512.github.io/">传送门</a></p><h2 id="一-下载安装Matery主题"><a href="#一-下载安装Matery主题" class="headerlink" title="一.下载安装Matery主题"></a>一.下载安装Matery主题</h2><p>首先在<a href="https://hexo.io/themes/">hexo官网</a>主题里面搜索Matery主题点击进入作者大大的github,然后下载master分支的最新稳定版的代码，解压缩后将hexo-theme-matery的文件夹重命名为matery,复制到Hexo的themes文件夹中</p><p>可以在themes文件夹下使用Git clone命令来下载：</p><pre class="line-numbers language-none"><code class="language-none">git clone https:&#x2F;&#x2F;github.com&#x2F;blinkfox&#x2F;hexo-theme-matery.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="二-基本配置"><a href="#二-基本配置" class="headerlink" title="二.基本配置"></a>二.基本配置</h2><h3 id="1-根目录下的-config-yml-不是主题下的哦😘"><a href="#1-根目录下的-config-yml-不是主题下的哦😘" class="headerlink" title="1.根目录下的_config.yml(不是主题下的哦😘)_"></a>1.根目录下的_config.yml(不是主题下的哦😘)_</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo+Github博客搭建</title>
       <link href="/posts/9495.html"/>
       <url>/posts/9495.html</url>
