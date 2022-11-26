@@ -404,21 +404,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-11-25
+                    2022-11-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.7k
+                    3.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    15 分
+                    16 分
                 </div>
                 
 
@@ -876,6 +876,31 @@ description: &quot;Oops～，我崩溃了！找不到你想要的页面 :(&quot;
       <span class="token key atrule">background</span><span class="token punctuation">:</span> <span class="token string">'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'</span>
       <span class="token key atrule">percent</span><span class="token punctuation">:</span> 75%<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
+<h3 id="8-修改博客留言板配置"><a href="#8-修改博客留言板配置" class="headerlink" title="8.修改博客留言板配置"></a>8.修改博客留言板配置</h3><p><code>contact</code> 页是用来展示<strong>留言板</strong>信息的页面，如果在你的博客 <code>source</code> 目录下还没有 <code>contact/index.md</code> 文件，那么你就需要新建一个，命令如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo new page &quot;contact&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>编辑你刚刚新建的页面文件 <code>/source/contact/index.md</code>，至少需要以下内容：</p>
+<pre class="line-numbers language-none"><code class="language-none">---
+title: contact
+date: 2022-09-30 17:25:30
+type: &quot;contact&quot;
+layout: &quot;contact&quot;
+---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><code>/source/contact/index.md</code> 中的 markdown 内容，回展示在留言板的页面上，例子如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">---
+title: contact
+date: 2019-10-14 13:14:00
+type: &quot;contact&quot;
+layout: &quot;contact&quot;
+---
+
+
+## 畅所欲言
+---
+在这里可以留下你的足迹，欢迎在下方留言，欢迎交换友链，一起交流学习！<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>注</strong>：本留言板功能依赖于第三方评论系统，请<strong>激活</strong>你的评论系统才有效果。可同时开启多个留言板～</p>
 
                 
             </div>
@@ -1009,6 +1034,28 @@ description: &quot;Oops～，我崩溃了！找不到你想要的页面 :(&quot;
 
     
 
+    
+    <div class="livere-card card" data-aos="fade-up">
+    <!-- 来必力City版安装代码 -->
+    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC81NzY5MC8zNDE1Mw==">
+        <script type="text/javascript">
+            (function (d, s) {
+                let j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') {
+                    return;
+                }
+
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->
+</div>
     
 
     
@@ -1264,7 +1311,7 @@ description: &quot;Oops～，我崩溃了！找不到你想要的页面 :(&quot;
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">5.5k</span>
+                        class="white-color">5.7k</span>
             
             
             
