@@ -411,14 +411,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.9k
+                    4.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    16 分
+                    18 分
                 </div>
                 
 
@@ -901,7 +901,67 @@ layout: &quot;contact&quot;
 在这里可以留下你的足迹，欢迎在下方留言，欢迎交换友链，一起交流学习！<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><strong>注</strong>：本留言板功能依赖于第三方评论系统，请<strong>激活</strong>你的评论系统才有效果。可同时开启多个留言板～</p>
+<p>配置 Livere 来必力评论模块</p>
+<p>注册 LiveRe 获取 uid</p>
+<p>进入 <a target="_blank" rel="noopener" href="https://livere.com/apply">LiveRe</a>，注册账号。</p>
+<p>LiveRe 有两个版本：</p>
+<ul>
+<li>City 版：是一款适合所有人使用的免费版本；</li>
+<li>Premium 版：是一款能够帮助企业实现自动化管理的多功能收费版本。</li>
+</ul>
+<p>我们 City 版就够了。</p>
+<p>填写完成后，进入到 管理页面 -&gt; 代码管理 -&gt; 一般网站 代码中，data-uid 即为所需 uid。</p>
+<p>修改配置文件</p>
+<p>将获取到的 uid 填入对应的配置文件</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">livere</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">uid</span><span class="token punctuation">:</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
+<h3 id="9-修改博客友链的配置"><a href="#9-修改博客友链的配置" class="headerlink" title="9.修改博客友链的配置"></a>9.修改博客友链的配置</h3><p><code>friends</code> 页是用来展示<strong>友情连接</strong>信息的页面，如果在你的博客 <code>source</code> 目录下还没有 <code>friends/index.md</code> 文件，那么你就需要新建一个，命令如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">hexo new page &quot;friends&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>编辑你刚刚新建的页面文件 <code>/source/friends/index.md</code>，至少需要以下内容：</p>
+<pre class="line-numbers language-none"><code class="language-none">---
+title: friends
+date: 2022-12-12 21:25:30
+type: &quot;friends&quot;
+layout: &quot;friends&quot;
+---<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>同时，在你的博客 <code>source</code> 目录下新建 <code>_data</code> 目录，在 <code>_data</code> 目录中新建 <code>friends.json</code> 文件，文件内容如下所示：</p>
+<pre class="line-numbers language-none"><code class="language-none">[
+  &#123;
+    &quot;avatar&quot;: &quot;https:&#x2F;&#x2F;wzl0512.github.io&#x2F;medias&#x2F;avatar.jpg
+&quot;,
+    &quot;name&quot;: &quot;wzl&quot;,
+    &quot;introduction&quot;: &quot;我不是大佬，只是在追寻大佬的脚步&quot;,
+    &quot;url&quot;: &quot;https:&#x2F;&#x2F;wzl0512.github.io&#x2F;&quot;,
+    &quot;title&quot;: &quot;前去学习&quot;
+&#125;
+]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="10-修改博客搜索的配置"><a href="#10-修改博客搜索的配置" class="headerlink" title="10.修改博客搜索的配置"></a>10.修改博客搜索的配置</h3><p>本主题中还使用到了 <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search">hexo-generator-search</a> 的 Hexo 插件来做内容搜索，安装命令如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">npm install hexo-generator-search --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>在 Hexo 根目录下的 <code>_config.yml</code> 文件中，新增以下的配置项：</p>
+<pre class="line-numbers language-none"><code class="language-none">search:
+  path: search.xml
+  field: post<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="11-配置网站各种特效"><a href="#11-配置网站各种特效" class="headerlink" title="11.配置网站各种特效"></a>11.配置网站各种特效</h3><p> 单击页面爱心效果</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">clicklove</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>背景 canvas-nest</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">canvas_nest</span><span class="token punctuation">:</span>
+  <span class="token key atrule">enable</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+  <span class="token key atrule">color</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">255</span>       <span class="token comment">#线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割</span>
+  <span class="token key atrule">pointColor</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">255</span>  <span class="token comment">#交点颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割</span>
+  <span class="token key atrule">opacity</span><span class="token punctuation">:</span> <span class="token number">0.8</span>         <span class="token comment"># 线条透明度（0~1）, 默认: 0.5</span>
+  <span class="token key atrule">zIndex</span><span class="token punctuation">:</span> <span class="token number">-1</span>           <span class="token comment"># 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1</span>
+  <span class="token key atrule">count</span><span class="token punctuation">:</span> <span class="token number">150</span>           <span class="token comment"># 线条的总数量, 默认: 99</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="12-配置网站统计功能"><a href="#12-配置网站统计功能" class="headerlink" title="12.配置网站统计功能"></a>12.配置网站统计功能</h3>
                 
             </div>
             <hr/>
@@ -1311,7 +1371,7 @@ layout: &quot;contact&quot;
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">5.7k</span>
+                        class="white-color">6.3k</span>
             
             
             
