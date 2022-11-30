@@ -8,7 +8,7 @@
       <link href="/posts/22212.html"/>
       <url>/posts/22212.html</url>
       
-        <content type="html"><![CDATA[<p>-Java</p><h1 id="Java基础-Java概述"><a href="#Java基础-Java概述" class="headerlink" title="Java基础-Java概述"></a>Java基础-Java概述</h1><h2 id="Java语言发展史"><a href="#Java语言发展史" class="headerlink" title="Java语言发展史"></a>Java语言发展史</h2><p>1995年Java语言——2004年Java（5.0）—-2014年Java（8.0）—-2018年9月Java（11.0）</p><h2 id="Java跨平台原理"><a href="#Java跨平台原理" class="headerlink" title="Java跨平台原理"></a>Java跨平台原理</h2><p>在需要运行Java应用程序的操作系统上，安装一个与操作系统对应的Java虚拟机（&#x3D;&#x3D;JVM Java Virtual Machine&#x3D;&#x3D;）即可</p><h2 id="JRE和JDK"><a href="#JRE和JDK" class="headerlink" title="JRE和JDK"></a>JRE和JDK</h2><p>JRE（Java Runtime Environment）</p><p>是Java程序的运行时环境，包含Jvm和运行时所需要的核心类库</p><p>JDK（Java Development Kit）</p><p>是Java程序开发工具包，包含jre 和开发人员使用的工具，其中的开发工具：编译工具（Javac.exe）和运行工具（Java.exe）。要想开发开发一个全新的java程序，必须安装JDK。</p><h2 id="JDK的下载与安装"><a href="#JDK的下载与安装" class="headerlink" title="JDK的下载与安装"></a>JDK的下载与安装</h2><p>下载：<a href="https://www.oracle.com/java/technologies/downloads/">https://www.oracle.com/java/technologies/downloads/</a> </p><p>下载电脑对应的jdk版本即可。</p><p>安装：JDK的安装是无脑安装，就是一路下一步下一步。。。默认安装在C盘下的Program Files目录下，一般建议安装在其他盘。建议：安装路径中不要包含中文和空格。建议安装路径为C:\Java </p><table><thead><tr><th>目录名称</th><th>说明</th></tr></thead><tbody><tr><td>bin</td><td>该路径下存放了JDK的各种工具命令。javac和Java就放在这个目录</td></tr><tr><td>conf</td><td>该路径下存放了JDK的相关配置文件</td></tr><tr><td>include</td><td>该路径下存放了一些平台特定的头文件</td></tr><tr><td>jmods</td><td>该路径下存放了jdk的各种模块</td></tr><tr><td>legal</td><td>该路径下存放了jdk各模块的授权文档</td></tr><tr><td>lib</td><td>该路径下存放了JDK工具的一些补充JAR包</td></tr></tbody></table><p>JDK 部署：在“系统变量”栏单击“新建”，弹出以下窗口：在“变量名”文本框中填写JAVA_HOME，在“变量值”文本框中填写JDK安装路径（即刚刚安装JDK的路径）</p><p>找到Path变量并进行编辑：双击打开Path变量；点击右上角新建；</p><p>新建两次，将jdk下的bin目录和jdk下jre里的bin目录配置进去。</p><p>添加%JAVA_HOME%\bin 和%JAVA_HOME%\jre\bin</p><p>测试：win+r并输入cmd点击确定进入dos窗口输入Java -version进行验证</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Java基础-Java概述"><a href="#Java基础-Java概述" class="headerlink" title="Java基础-Java概述"></a>Java基础-Java概述</h1><h2 id="Java语言发展史"><a href="#Java语言发展史" class="headerlink" title="Java语言发展史"></a>Java语言发展史</h2><p>1995年Java语言——2004年Java（5.0）—-2014年Java（8.0）—-2018年9月Java（11.0）</p><h2 id="Java跨平台原理"><a href="#Java跨平台原理" class="headerlink" title="Java跨平台原理"></a>Java跨平台原理</h2><p>在需要运行Java应用程序的操作系统上，安装一个与操作系统对应的Java虚拟机（&#x3D;&#x3D;JVM Java Virtual Machine&#x3D;&#x3D;）即可</p><h2 id="JRE和JDK"><a href="#JRE和JDK" class="headerlink" title="JRE和JDK"></a>JRE和JDK</h2><p>JRE（Java Runtime Environment）</p><p>是Java程序的运行时环境，包含Jvm和运行时所需要的核心类库</p><p>JDK（Java Development Kit）</p><p>是Java程序开发工具包，包含jre 和开发人员使用的工具，其中的开发工具：编译工具（Javac.exe）和运行工具（Java.exe）。要想开发开发一个全新的java程序，必须安装JDK。</p><h2 id="JDK的下载与安装"><a href="#JDK的下载与安装" class="headerlink" title="JDK的下载与安装"></a>JDK的下载与安装</h2><p>下载：<a href="https://www.oracle.com/java/technologies/downloads/">https://www.oracle.com/java/technologies/downloads/</a> </p><p>下载电脑对应的jdk版本即可。</p><p>安装：JDK的安装是无脑安装，就是一路下一步下一步。。。默认安装在C盘下的Program Files目录下，一般建议安装在其他盘。建议：安装路径中不要包含中文和空格。建议安装路径为C:\Java </p><table><thead><tr><th>目录名称</th><th>说明</th></tr></thead><tbody><tr><td>bin</td><td>该路径下存放了JDK的各种工具命令。javac和Java就放在这个目录</td></tr><tr><td>conf</td><td>该路径下存放了JDK的相关配置文件</td></tr><tr><td>include</td><td>该路径下存放了一些平台特定的头文件</td></tr><tr><td>jmods</td><td>该路径下存放了jdk的各种模块</td></tr><tr><td>legal</td><td>该路径下存放了jdk各模块的授权文档</td></tr><tr><td>lib</td><td>该路径下存放了JDK工具的一些补充JAR包</td></tr></tbody></table><p>JDK 部署：在“系统变量”栏单击“新建”，弹出以下窗口：在“变量名”文本框中填写JAVA_HOME，在“变量值”文本框中填写JDK安装路径（即刚刚安装JDK的路径）</p><p>找到Path变量并进行编辑：双击打开Path变量；点击右上角新建；</p><p>新建两次，将jdk下的bin目录和jdk下jre里的bin目录配置进去。</p><p>添加%JAVA_HOME%\bin 和%JAVA_HOME%\jre\bin</p><p>测试：win+r并输入cmd点击确定进入dos窗口输入Java -version进行验证</p>]]></content>
       
       
       <categories>
@@ -17,6 +17,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
       
     </entry>
     
