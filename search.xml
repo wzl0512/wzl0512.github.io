@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>java基础-第一个程序</title>
+      <link href="/posts/21553.html"/>
+      <url>/posts/21553.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Java基础-第一个程序"><a href="#Java基础-第一个程序" class="headerlink" title="Java基础-第一个程序"></a>Java基础-第一个程序</h1><h2 id="1-常用DOS命令"><a href="#1-常用DOS命令" class="headerlink" title="1.常用DOS命令"></a>1.常用DOS命令</h2><h3 id="1-1打开命令提示符窗口"><a href="#1-1打开命令提示符窗口" class="headerlink" title="1.1打开命令提示符窗口"></a>1.1打开命令提示符窗口</h3><ol><li>按下win+R</li><li>输入cmd</li><li>按下回车键</li></ol><table><thead><tr><th>操作</th><th>说明</th></tr></thead><tbody><tr><td>盘符名称：</td><td>盘符切换。E：回车，表示切换到E盘</td></tr><tr><td>dir</td><td>查看当前路径下的内容</td></tr><tr><td>cd 目录</td><td>进入单级目录。cd java</td></tr><tr><td>cd ..</td><td>回退到上一级目录</td></tr><tr><td>cd 目录1\目录2..</td><td>进入多级目录。 cd java\JavaSE</td></tr><tr><td>cd \</td><td>回退到盘符目录</td></tr><tr><td>cls</td><td>清屏</td></tr><tr><td>exit</td><td>退出命令提示符窗口</td></tr></tbody></table><h2 id="2-Path环境变量的配置"><a href="#2-Path环境变量的配置" class="headerlink" title="2.Path环境变量的配置"></a>2.Path环境变量的配置</h2><h2 id="3-Hello-World案例"><a href="#3-Hello-World案例" class="headerlink" title="3.Hello World案例"></a>3.Hello World案例</h2><p>###3.1Java程序开发运行流程</p><p>开发程序，需要三个步骤：编写程序，编译程序，运行程序</p><p>###3.2Hello World案例的编写</p><ol><li>新建文本文档文件，修改名称为Hello World.java</li><li>用记事本打开HelloWorld.Java文件，输出程序内容</li></ol><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">HelloWorld</span><span class="token punctuation">&#123;</span><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">&#123;</span><span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"HelloWorld"</span><span class="token punctuation">)</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="3-3Hello-World案例的编译和运行"><a href="#3-3Hello-World案例的编译和运行" class="headerlink" title="3.3Hello World案例的编译和运行"></a>3.3Hello World案例的编译和运行</h3><p>打开命令提示符窗口，进入到Hello World.Java所在的目录 </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> Java基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SpringBoot接受数据</title>
+      <link href="/posts/6377.html"/>
+      <url>/posts/6377.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="SpringBoot接受数据"><a href="#SpringBoot接受数据" class="headerlink" title="SpringBoot接受数据"></a>SpringBoot接受数据</h1><h2 id="1-非JSON格式的数据"><a href="#1-非JSON格式的数据" class="headerlink" title="1.非JSON格式的数据"></a>1.非JSON格式的数据</h2><p>1.直接可以将控制层的方法的参数名称和请求的参数名称保持一致来进行接收。</p><p>2.如果前端的数据量比较多，可以使用pojo的实体类类型作为参数的列表。</p><p>3.RestFul风格数据提交。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> SpringBoot </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpringBoot接受数据 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java基础-Java概述</title>
       <link href="/posts/22212.html"/>
       <url>/posts/22212.html</url>
