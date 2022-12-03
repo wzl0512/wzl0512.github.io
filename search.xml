@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Java基础-运算符</title>
+      <link href="/posts/64640.html"/>
+      <url>/posts/64640.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Java基础-运算符"><a href="#Java基础-运算符" class="headerlink" title="Java基础-运算符"></a>Java基础-运算符</h1><h2 id="1-算术运算符"><a href="#1-算术运算符" class="headerlink" title="1.算术运算符"></a>1.算术运算符</h2><h3 id="1-1运算符和表达式"><a href="#1-1运算符和表达式" class="headerlink" title="1.1运算符和表达式"></a>1.1运算符和表达式</h3><ul><li>运算符：对常量或者变量进行操作的符号</li><li>表达式：用运算符把常量或者变量连接起来符合java语法的式子就可以称之为表达式。 不同运算符连接的表达式体现的是不同类型的表达式。</li><li>举例说明:</li></ul><p>inta &#x3D; 10;</p><p>intb &#x3D; 20;</p><p>intc &#x3D; a + b;</p><p>+:是运算符，并且是算术运算符</p><p>a + b:是表达式，由于+是算术运算符，所以这个表达式叫算术表达式</p><h3 id="1-2-算术运算符"><a href="#1-2-算术运算符" class="headerlink" title="1.2 算术运算符"></a>1.2 算术运算符</h3><pre class="line-numbers language-none"><code class="language-none">&quot;+&quot;&quot;-&quot;&quot;*&quot;&quot;&#x2F;&quot;&quot;%&quot;注意事项：&#x2F;和%的区别:俩个数据做除法，&#x2F;取结果的商，%取结果的余数。整数操作只能得到整数，要想得到小数，必须有浮点数参与运算。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h3 id="1-3-字符的”-”操作"><a href="#1-3-字符的”-”操作" class="headerlink" title="1.3 字符的”+”操作"></a>1.3 字符的”+”操作</h3><p>拿字符在计算机底层对应的数值来进行计算的</p><p>‘A’→ 65 A-Z是连续的</p><p>‘a’→97a-z是连续的</p><p>‘0’→480-9是连续的</p><p> 算术表达式中包含多个基本数据类型的值的时候，整个算术表达式的类型会自动进行提升。</p><p>提升规则：</p><ul><li>byte 类型，short类型和char类型将被提升到int类型</li><li>整个表达式的类型自动提升到表达式中最高等级操作数同样的类型</li><li>等级顺序：byte,short,char→ int → long → float → double</li></ul><h3 id="1-4字符串的”-”操作"><a href="#1-4字符串的”-”操作" class="headerlink" title="1.4字符串的”+”操作"></a>1.4字符串的”+”操作</h3><p>当”+”操作中出现字符串时，这个”+” 是字符串连接符，而不是算术运算。</p><ul><li>“wzl” + 666</li></ul><p>在”+”操作中，如果出现了字符串，就是接连运算符，否则就是算术运算符，当连续进行”+”操作时，从左到右逐个执行。</p><ul><li>1 + 99 + “年wzl”</li></ul><h2 id="2-赋值运算符"><a href="#2-赋值运算符" class="headerlink" title="2.赋值运算符"></a>2.赋值运算符</h2><h3 id="2-1赋值运算符"><a href="#2-1赋值运算符" class="headerlink" title="2.1赋值运算符"></a>2.1赋值运算符</h3><table><thead><tr><th>符号</th><th>作用</th><th>说明</th></tr></thead><tbody><tr><td>&#x3D;</td><td>赋值</td><td>a &#x3D; 10,将10赋值给变量a</td></tr><tr><td>+&#x3D;</td><td>加后赋值</td><td>a +&#x3D; b, 将a+b的值赋给a</td></tr><tr><td>-&#x3D;</td><td>减后赋值</td><td>a -&#x3D; b, 将a-b的值赋给a</td></tr><tr><td>*&#x3D;</td><td>乘后赋值</td><td>a *&#x3D; b, 将a×b的值赋给a</td></tr><tr><td>&#x2F;&#x3D;</td><td>除后赋值</td><td>a &#x2F;&#x3D;b , 将a÷b的商赋给a</td></tr><tr><td>%&#x3D;</td><td>取余后赋值</td><td>a %&#x3D;b, 将a÷b 的余数赋给a</td></tr></tbody></table><p style="color:red">注意事项：</p><p>扩展的赋值运算符隐含了强制类型转换</p><h2 id="3-自增自减运算符"><a href="#3-自增自减运算符" class="headerlink" title="3.自增自减运算符"></a>3.自增自减运算符</h2><h3 id="3-1-自增自减运算符"><a href="#3-1-自增自减运算符" class="headerlink" title="3.1 自增自减运算符"></a>3.1 自增自减运算符</h3><table><thead><tr><th>符号</th><th>作用</th><th>说明</th></tr></thead><tbody><tr><td>++</td><td>自增</td><td>变量的值加1</td></tr><tr><td>–</td><td>自减</td><td>变量的值减1</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> Java基础 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java基础-基础语法</title>
       <link href="/posts/33554.html"/>
       <url>/posts/33554.html</url>
